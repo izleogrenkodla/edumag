@@ -1,0 +1,59 @@
+.page-header {
+    min-height: 170px;
+}
+
+
+/* Logo */
+
+.page-header-inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-header-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.brand img {
+    width: 180px;
+    margin: 0 -15px;
+}
+
+.baseline {
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+}
+
+.form {
+    display: none;
+}
+
+@media (min-width: 640px) {
+    .page-header-inner {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .page-header {
+        min-height: 129px;
+    }
+    .form {
+        display: block;
+    }
+    .navbar-dark .navbar-toggler button {
+        color: #000;
+        border-color: #000;
+    }
+}
+
+//Cases à droite
+.page-header-content .user {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.user button {
+    border: 1px solid #22B2C5;
+}
